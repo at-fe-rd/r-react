@@ -1,0 +1,36 @@
+@mixin transition($option) {
+  -moz-transition: $option;
+  -webkit-transition: $option;
+  transition: $option;
+}
+
+@mixin transform($option) {
+  -moz-transform: $option;
+  -ms-transform: $option;
+  -webkit-transform: $option;
+  transform: $option;
+}
+
+@mixin box-shadow($option) {
+  -moz-box-shadow: $option;
+  -webkit-box-shadow: $option;
+  box-shadow: $option;
+}
+
+@mixin font-awesome($content, $font-size) {
+  text-shadow: none;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'fontawesome';
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-transform: none;
+  content: $content;
+  font-size: $font-size;
+}
+
+@mixin opacity($option) {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=$option);
+  opacity: $option;
+}

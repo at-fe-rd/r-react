@@ -1,0 +1,14 @@
+/* reset bootstrap's variables and project's variables */
+@import 'variables';
+
+/* import bootstrap */
+@import '~bootstrap/scss/bootstrap';
+
+/* import font-awesome */
+$fa-font-path: '~font-awesome/fonts';
+@import '~font-awesome/scss/font-awesome';
+
+/* own stylesheet */
+@import 'mixin';
+@import 'reset';
+@import 'base';
